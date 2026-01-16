@@ -46,7 +46,7 @@
     --surface-dark: var(--cays-navy);
 
     /* Typography */
-    --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Montserrat', system-ui, -apple-system, sans-serif;
     --font-body: 'Inter', system-ui, -apple-system, sans-serif;
 
     /* Spacing */
@@ -107,13 +107,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    font-weight: 600;
-    line-height: 1.2;
+    font-weight: 800;
+    line-height: 1.1;
     color: var(--cays-navy);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
-h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); }
+h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+h2 { font-size: clamp(2rem, 5vw, 3rem); }
 h3 { font-size: clamp(1.25rem, 3vw, 1.5rem); }
 
 p {
