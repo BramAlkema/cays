@@ -7,14 +7,15 @@
    CSS Custom Properties
    ----------------------------------------------------- */
 :root {
-    /* Brand Colors */
-    --cays-navy: #1a2f4a;
-    --cays-navy-dark: #0f1c2e;
-    --cays-navy-light: #2a4a6a;
-    --cays-accent: #3a7bd5;
-    --cays-accent-light: #5a9be5;
-    --cays-accent-dark: #2a5bb5;
-    --cays-gold: #c9a227;
+    /* Brand Colors - CAYS Official */
+    --cays-navy: #073763;
+    --cays-navy-dark: #042342;
+    --cays-navy-light: #1f497d;
+    --cays-accent: #3b82f6;
+    --cays-accent-light: #60a5fa;
+    --cays-accent-dark: #2563eb;
+    --cays-green: #51ab2a;
+    --cays-gray: #454245;
 
     /* Neutral Colors */
     --white: #ffffff;
@@ -197,17 +198,14 @@ img {
     align-items: center;
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 0.05em;
-    transition: color var(--transition-fast);
+.logo-img {
+    height: 36px;
+    width: auto;
+    transition: filter var(--transition-fast);
 }
 
-.navbar.scrolled .logo-text {
-    color: var(--cays-navy);
+.navbar.scrolled .logo-img {
+    filter: none;
 }
 
 .nav-menu {
@@ -338,7 +336,10 @@ img {
 .hero-background {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, var(--cays-navy-dark) 0%, var(--cays-navy) 50%, var(--cays-navy-light) 100%);
+    background: linear-gradient(135deg, rgba(7, 55, 99, 0.92) 0%, rgba(7, 55, 99, 0.85) 50%, rgba(31, 73, 125, 0.88) 100%),
+                url('images/hero-collab.jpg');
+    background-size: cover;
+    background-position: center;
     z-index: -1;
 }
 
@@ -346,8 +347,8 @@ img {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(ellipse at 30% 20%, rgba(58, 123, 213, 0.15) 0%, transparent 50%),
-                radial-gradient(ellipse at 70% 80%, rgba(58, 123, 213, 0.1) 0%, transparent 50%);
+    background: radial-gradient(ellipse at 30% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
 }
 
 .hero-background::after {
@@ -971,12 +972,9 @@ img {
 }
 
 .footer-logo {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--white);
-    letter-spacing: 0.05em;
-    margin-bottom: var(--space-sm);
+    height: 40px;
+    width: auto;
+    margin-bottom: var(--space-md);
 }
 
 .footer-tagline {
