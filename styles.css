@@ -199,13 +199,19 @@ img {
 }
 
 .logo-img {
-    height: 36px;
+    height: 48px;
     width: auto;
     transition: filter var(--transition-fast);
 }
 
 .navbar.scrolled .logo-img {
     filter: none;
+}
+
+.footer-logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: var(--space-md);
 }
 
 .nav-menu {
@@ -969,12 +975,6 @@ img {
 
 .footer-content {
     text-align: center;
-}
-
-.footer-logo {
-    height: 40px;
-    width: auto;
-    margin-bottom: var(--space-md);
 }
 
 .footer-tagline {
