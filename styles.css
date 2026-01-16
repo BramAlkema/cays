@@ -7,15 +7,19 @@
    CSS Custom Properties
    ----------------------------------------------------- */
 :root {
-    /* Brand Colors - CAYS Official */
+    /* Brand Colors - from CAYS logo SVG */
     --cays-navy: #073763;
     --cays-navy-dark: #042342;
     --cays-navy-light: #1f497d;
-    --cays-accent: #3b82f6;
-    --cays-accent-light: #60a5fa;
-    --cays-accent-dark: #2563eb;
+    --cays-blue: #4f81bd;
+    --cays-blue-light: #7dc3d6;
+    --cays-accent: #4f81bd;
+    --cays-accent-light: #7dc3d6;
+    --cays-accent-dark: #1f497d;
     --cays-green: #51ab2a;
+    --cays-green-dark: #203e13;
     --cays-gray: #454245;
+    --cays-gray-light: #b3b3b3;
 
     /* Neutral Colors */
     --white: #ffffff;
@@ -74,7 +78,7 @@
 
     /* Layout */
     --container-max: 1200px;
-    --navbar-height: 72px;
+    --navbar-height: 80px;
 }
 
 /* -----------------------------------------------------
@@ -199,7 +203,7 @@ img {
 }
 
 .logo-img {
-    height: 48px;
+    height: 64px;
     width: auto;
     transition: filter var(--transition-fast);
 }
@@ -209,7 +213,7 @@ img {
 }
 
 .footer-logo {
-    height: 60px;
+    height: 80px;
     width: auto;
     margin-bottom: var(--space-md);
 }
